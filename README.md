@@ -1,2 +1,2 @@
 # hello-world
-it's just a trial
+it's just a trial.
