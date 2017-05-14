@@ -5,6 +5,7 @@
 <title>config page</title>
 </head>
 <link href="css/config.css" rel="stylesheet" type="text/css"/>
+<script src="js/config.js"></script>
 <body>
 <header>
 <div class="top">
@@ -29,48 +30,54 @@
 <section>
 <div class="center">
 <div class="tablecls">
-<table style="width:100%">
+<table id="data_table" style="width:100%">
   <tr>
     <th>Name</th>
     <th>Key</th> 
     <th>Value</th>
 	<th>Add</th>
   </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-	<td><input type="button" value="cfxsdf" onclick=" ">
-	<input type="button" value="Delete" onclick=""></td>
+  <tr id="row1">
+    <td id="name_row1">Jill</td>
+    <td id="key_row1">Smith</td>
+    <td id="value_row1">50</td>
+	<td><input type="button" value="edit" class="edit" id="edit_button1" onclick="edit_row('1')">
+	<input type="button" value="save" class="save" id="save_button1" onclick="save_row('1')">
+	<input type="button" value="Delete" class="delete" onclick="delete_row('1')"></td>
   </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-	<td><input type="button" value="xv" onclick=" ">
-	<input type="button" value="Delete" onclick=""></td>
+  <tr id="row2">
+    <td id="name_row2">Eve</td>
+    <td id="key_row2">Jackson</td>
+    <td id="value_row2">94</td>
+	<td><input type="button" value="edit" class="edit" id="edit_button2" onclick="edit_row('2')">
+	<input type="button" value="save" class="save" id="save_button2" onclick="save_row('2')">
+	<input type="button" value="Delete" class="delete" onclick="delete_row('2')"></td>
   </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-	<td><input type="button" value="xv" onclick=" ">
-	<input type="button" value="Delete" onclick=""></td>
+  <tr id="row3">
+    <td id="name_row3">John</td>
+    <td id="key_row3">Doe</td>
+    <td id="value_row3">80</td>
+	<td><input type="button" value="edit" class="edit" id="edit_button3" onclick="edit_row('3')">
+	<input type="button" value="save" class="save" id="save_button3" onclick="save_row('3')">
+	<input type="button" value="Delete" class="delete" onclick="delete_row('3')"></td>
   </tr>
-   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-	<td><input type="button" value="xcvx" onclick=" ">
-	<input type="button" value="Delete" onclick=""></td>
+   <tr id="row4">
+    <td id="name_row4">Jill</td>
+    <td id="key_row4">Smith</td>
+    <td id="value_row4">50</td>
+<td><input type="button" value="edit" class="edit" id="edit_button4" onclick="edit_row('4')">
+	<input type="button" value="save" class="save" id="save_button4" onclick="save_row('4')">
+	<input type="button" value="Delete" class="delete" onclick="delete_row('4')"></td>
   </tr>
-   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-	<td><input type="button" value="bcb" onclick=" ">
-	<input type="button" value="Delete" onclick=" "></td>
+   <tr id="row5">
+    <td id="name_row5">Jill</td>
+    <td id="key_row5">Smith</td>
+    <td id="value_row5">50</td>
+<td><input type="button" value="edit" class="edit" id="edit_button5" onclick="edit_row('5')">
+	<input type="button" value="save" class="save" id="save_button5" onclick="save_row('5')">
+	<input type="button" value="Delete" class="delete" onclick="delete_row('5')"></td>
   </tr>
+  
 </table>
 </div>
 </div>
