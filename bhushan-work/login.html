@@ -5,6 +5,7 @@
 <title>login page</title>
 </head>
 <link href="css/login.css" rel="stylesheet" type="text/css"/>
+<script src="js/login.js"></script>
 <body>
 <header>
 <div class="top">
@@ -20,9 +21,9 @@
 <section>
 <div class="center">
 <h3>Log In Here</h3>
-<input type="text" placeholder="Username"/>
-<input type="password" placeholder="Password"/>
-<a href="master.html"><button class="btn btn-login">Login</button></a>
+<input id="username" type="text" placeholder="Username"/>
+<input id="password" type="password" placeholder="Password"/>
+<input class="btn btn-login" type="button" value="Login" id="submit" onclick="validate()"/>
 <p><a style="color:#333;text-decoration:none;" href="#">Forget Password</a></p>
 </div>
 </section>
